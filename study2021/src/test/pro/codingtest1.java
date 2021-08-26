@@ -1,4 +1,4 @@
-package study2021.pro;
+package test.pro;
 
 public class codingtest1 {
 
