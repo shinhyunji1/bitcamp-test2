@@ -1,48 +1,69 @@
 package example.ex;
 
 public class Tset {
-  //Wrapper 클래스 - 종류
+  // while(true) {
+  //     String status = Prompt.inputString("[좋아요 (#: 👍🏻) / 신고하기(!: 🚨) /\n"
+  //         + "댓글달기(@: 💬) / 넘어가기: Enter]> ");
+  //     if (status.equals("#")) {
+  //       freeBoard.setLike(freeBoard.getLike() + 1);
+  //       System.out.println("게시글 좋아요를 눌렀습니다.");
+  //       break;
+  //     } else if (status.equals("@")) {
+  //       System.out.println("[댓글 달기]");
+  //       System.out.println();
+  //       int commentTotal = Comment.getCommentTotal();
+  //       Comment comment = new Comment(); 
 
-  public static void main(String[] args) {
-    // 자바는 primitive data 를 객체처럼 다룰 수 있도록
-    // 각 타입에 대응하는 클래스를 제공한다.
+  //       if (commentTotal == 0) {
+  //         comment.setNo(1);
+  //         commentTotal++;
+  //         Comment.setCommentTotal(commentTotal);
+  //         comment.setCommentBoardNo(freeBoard.getNo());
+  //         comment.setCommentWriter(freeBoard.getWriter().getId());
+  //         comment.setCommenter(AuthLoginHandler.getLoginUser().getId());
+  //         System.out.printf("-%s-\n", AuthLoginHandler.getLoginUser().getId());
+  //         comment.setCommentContent(Prompt.inputString("댓글 내용> "));
 
-    // 래퍼 클래스의 주요 용도:
-    // => primitive data type의 값을 객체로 주고 받을 때 사용한다.
-    // => primitive data type의 값을 객체에 담아 전달하고 싶다면
-    //    언제든 wrapper 클래스의 인스턴스를 만들면 된다.
+  //         commentList.add(comment);
+  //         break;
+  //       } else {
+  //         int lastIndex = 0;
+  //         for (int i = 0; i < commentList.size(); i++) {
+  //           if (commentList.get(i).getCommentBoardNo() == freeBoard.getNo()) {
+  //             lastIndex++;
+  //           }
+  //         }
 
-    //    Byte b = new Byte((byte)100);               // ==> byte
-    //    Short s = new Short((short)20000);          // ==> short
-    //    Integer i = new Integer(3000000);           // ==> int
-    //    Long l = new Long(60000000000L);            // ==> long
-    //    Float f = new Float(3.14f);                 // ==> float
-    //    Double d = new Double(3.14159);             // ==> double
-    //    Boolean bool = new Boolean(true);           // ==> boolean
-    //    Character c = new Character((char)0x41);    // ==> char
+  //         Comment.setCommentTotal(commentTotal++);
+  //         comment.setNo(++lastIndex);
+  //         comment.setCommentBoardNo(freeBoard.getNo());
+  //         comment.setCommentWriter(freeBoard.getWriter().getId());
+  //         comment.setCommenter(AuthLoginHandler.getLoginUser().getId());
+  //         System.out.printf("-%s-\n", AuthLoginHandler.getLoginUser().getId());
+  //         comment.setCommentContent(Prompt.inputString("댓글 내용> "));
 
-    // 이렇게 primitive data type에 대응하여 만든 클래스를
-    // primitive data를 포장하는 객체라고 해서
-    // "랩퍼(wrapper) 클래스"라 부른다.
-
-    //
-    // Java 9 부터 wrapper 클래스의 생성자가 deprecated 상태이다.
-    // 가능한 생성자를 사용하여 인스턴스를 생성하지 말라!
-    // deprecated(비난받는, 유지보수가 중단되어, 사용이 권장되지 않는)?
-    // - 사용하지 않는 것이 좋다고 결정되었고, 가까운 장래에 제거될 것이라는 의미.
-    //
+  //         commentList.add(comment);
+  //         break;
 
 
-    // Wrapper 클래스의 인스턴스를 생성할 때는 생성자 대신 클래스 메서드를 사용하라.
-    Byte b2 = Byte.valueOf((byte)100);
-    Short s2 = Short.valueOf((short)20000);
-    Integer i2 = Integer.valueOf(3000000);
-    Long l2 = Long.valueOf(60000000000L);
-    Float f2 = Float.valueOf(3.14f);
-    Double d2 = Double.valueOf(3.14159);
-    Boolean bool2 = Boolean.valueOf(true);
-    Character c2 = Character.valueOf((char)0x41);
-  }
+  //         //        request.setAttribute("no", no);
+  //         //        request.getRequestDispatcher("/comment/add").forward(request);
+
+  //       }
+  //     } else if (status.equals("!")) {
+  //       freeBoard.setReason(Prompt.inputString("신고 사유를 작성해 주세요> "));
+  //       reportList.add(freeBoard);
+  //       freeBoard.setRequester(AuthLoginHandler.loginUser.getId());
+  //       System.out.println("신고 접수가 완료되었습니다. 깨끗한 게시판 문화를 만드는데 도움을 주셔서 감사합니다!");
+  //       break;
+  //     }
+  //     else if (status.equals("")){
+  //       break;
+  //     } else {
+  //       System.out.println("메뉴에 맞는 명령어를 입력해 주세요.");
+  //       continue;
+  //     }
+  //   }
 }
 
 
