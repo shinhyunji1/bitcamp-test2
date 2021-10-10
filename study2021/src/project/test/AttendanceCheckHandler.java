@@ -98,7 +98,7 @@ package project.test;
 //            dateCheck.setDate(today);
 //            dateCheck.setUser(loginUser);
 //
-//            requestAgent.request("dateCheck.insert", dateCheck);
+//            requestAgent.request("dateCheck.insert", dateCheck); // dateCheck에 추가 데이터 저장
 //
 //            if (requestAgent.getStatus().equals(RequestAgent.FAIL)) {
 //              System.out.println("오늘 날짜 저장 실패!");
